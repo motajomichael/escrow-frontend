@@ -1,7 +1,7 @@
 import os
 import tomli
 
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), '..', 'secrets.toml')
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), '.streamlit', 'secrets.toml')
 
 with open(CONFIG_PATH, 'rb') as f:
     config = tomli.load(f)
